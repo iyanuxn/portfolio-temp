@@ -1,0 +1,386 @@
+/* A media query that is targeting devices with a pixel ratio of 1.5. */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --color-bg-dark: #1f1f38;
+    --color-bg-light: #dbdbff;
+    --color-bg-variant: #2c2c6c;
+    --color-primary: #4db5ff;
+    --color-primary-variant: rgba(77, 181, 255, 0.5);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.5);
+
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--color-bg-light);
+    color: var(--color-bg-dark);
+    line-height: 1.7;
+    background-image: url(./assets/bg-texture-2.png);
+}
+
+
+section {
+    height: auto;
+}
+
+.bdlight {
+    background: var(--color-bg-dark);
+    color: var(--color-bg-light);
+    background-image: url(./assets/bg-texture-2.png);
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    margin: 2rem;
+}
+
+.mode-container {
+    width: 5.5rem;
+    height: auto;
+    height: max-content;
+    background: var(--color-bg-dark);
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+.back {
+    background: var(--color-bg-light);
+}
+
+.mode-button {
+    display: grid;
+    margin: 0.2rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--color-bg-light);
+    color: var(--color-bg-dark);
+    border-radius: 50%;
+    transition: var(--transition);
+    transform: translateX(3.15rem);
+}
+
+.light {
+    transform: translateX(0);
+    background: var(--color-bg-dark);
+    color: var(--color-bg-light);
+}
+
+.mode-button i {
+    margin: auto;
+}
+
+.left-col {
+    margin: 2rem;
+    height: 100vh;
+    margin-top: 4rem;
+}
+
+.left-col p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.left-col span {
+    font-weight: 300;
+}
+
+.next-section {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    animation: scale 800ms ease-in-out infinite alternate
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1.0);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.right-col {
+    background: var(--color-bg-dark);
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10rem 10rem 0 0;
+    color: var(--color-bg-light);
+}
+
+.name {
+    font-size: 1.65rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.arepo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.alink:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.link,
+.repo {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    font-weight: 300;
+}
+
+.alink,
+.arepo {
+    display: flex;
+    align-items: center;
+    transition: var(--transition);
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.arepo i,
+.alink i {
+    font-size: 1.5rem;
+    margin-right: 1.2rem;
+}
+
+.right-col-light {
+    background: var(--color-bg-light);
+    color: var(--color-bg-dark);
+}
+
+.social {
+    margin-top: 3rem;
+    width: max-content;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    font-size: 2rem;
+}
+
+.social-icons i {
+    transition: var(--transition);
+}
+
+.social-icons i:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.control {
+    font-size: 4rem;
+}
+
+.control i {
+    padding: 1rem;
+    transition: var(--transition);
+}
+
+.control i:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+/* tablets */
+@media (min-width: 768px) {
+
+    .mode-container {
+        width: 7.66rem;
+        font-size: 2rem;
+    }
+
+    .mode-button {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    h1 {
+        font-size: 8rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .next-section {
+        font-size: 2rem;
+        margin-top: 3rem;
+    }
+
+    .left-col {
+        margin-top: 3rem;
+    }
+
+    .left-col p {
+        font-size: 4rem;
+    }
+
+    .social-icons {
+        font-size: 3rem;
+    }
+
+    .left-col span {
+        font-size: 2rem;
+    }
+
+    .right-col {
+        border-radius: 15rem 15rem 0 0;
+    }
+
+    .name {
+        font-size: 4rem;
+    }
+
+    .link,
+    .repo {
+        font-size: 2rem;
+        height: 10rem;
+    }
+
+    .arepo i,
+    .alink i {
+        font-size: 3rem;
+    }
+
+    .control {
+        font-size: 6rem;
+    }
+
+    .contact {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    section {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .left-col p {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .next-section {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .right-col {
+        border-radius: 15rem 15rem 0 0;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .arepo:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .alink:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .link,
+    .repo {
+        font-size: 1rem;
+    }
+
+    .contact {
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) {
+    .name {
+        font-size: 4.3rem;
+    }
+
+    .link,
+    .repo {
+        font-size: 2rem;
+        height: 10rem;
+    }
+
+    .alink,
+    .arepo {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .arepo i,
+    .alink i {
+        font-size: 3rem;
+    }
+}
