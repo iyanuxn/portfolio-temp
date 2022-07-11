@@ -13,6 +13,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }
 
 * {
+    -webkit-tap-highlight-color: transparent;
     margin: 0;
     padding: 0;
     border: 0;
@@ -43,7 +44,6 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -243,9 +243,9 @@ nav {
     cursor: pointer;
     transform: scale(1.1);
 }
-tablets
-@media (min-width: 768px) {
 
+/* tablets  */
+/* @media (min-width: 768px) {
     .mode-container {
         width: 7.66rem;
         font-size: 2rem;
@@ -311,7 +311,7 @@ tablets
     .contact {
         font-size: 2rem;
     }
-}
+} */
 
 @media (min-width: 1200px) {
 
