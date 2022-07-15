@@ -46,7 +46,7 @@ const details = [{
     },
 ]
 
-mode.addEventListener('click', function () {
+modeContainer.addEventListener('click', function () {
     mode.classList.toggle('light');
     modeContainer.classList.toggle('back');
     icon.classList.toggle('fa-sun');
