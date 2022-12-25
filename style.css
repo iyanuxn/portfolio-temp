@@ -5,8 +5,7 @@ only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
 
-    html,
-    body {
+    html {
         margin: 0;
         padding: 0;
         overflow-x: hidden;
@@ -159,7 +158,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 10rem 10rem 0 0;
+    border-radius: 2rem 2rem 0 0;
     color: var(--color-bg-light);
 }
 
@@ -336,7 +335,7 @@ nav {
     }
 
     .right-col {
-        border-radius: 15rem 15rem 0 0;
+        border-radius: 10rem 0 0 0;
     }
 
     .name {
